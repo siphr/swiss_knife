@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir wav
+
+for file in *.m4a; do
+echo "CONVERTING $file"
+ffmpeg -i "$file" "wav/$file.wav"
+done
